@@ -15,7 +15,7 @@
 <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <a href="#inicio" class="font-display text-lg font-bold tracking-tight">Lucía Fernández <span class="font-normal text-ink-soft">· Psicóloga</span></a>
 <div class="hidden gap-8 text-sm font-medium text-ink-soft md:flex"><a href="#servicios" class="hover:text-ink">Servicios</a><a href="#como-funciona" class="hover:text-ink">Cómo funciona</a><a href="#reservar" class="hover:text-ink">Reservar</a><a href="#preguntas" class="hover:text-ink">Preguntas</a></div>
-<a href="#reservar" class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Reservar turno</a>
+<a href="#reservar" data-booking-open class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Reservar turno</a>
 </nav></header>
 <main id="inicio">
 <section class="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24 lg:items-center">
@@ -23,7 +23,7 @@
 <p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Consultas online · En español</p>
 <h1 class="mt-5 font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Un espacio para hablar, desde donde estés.</h1>
 <p class="mt-5 max-w-lg text-lg leading-relaxed text-ink-soft">Sesiones online de 50 minutos. Reservá tu turno en 1 minuto, sin mensajes de ida y vuelta: elegís el horario en Google Calendar y te llega la confirmación con el link de videollamada.</p>
-<div class="mt-8 flex flex-wrap gap-3"><a href="#reservar" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar turno</a><a href="#como-funciona" class="rounded-full border border-line px-7 py-3.5 font-semibold">Cómo funciona</a></div>
+<div class="mt-8 flex flex-wrap gap-3"><a href="#reservar" data-booking-open class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar turno</a><a href="#como-funciona" class="rounded-full border border-line px-7 py-3.5 font-semibold">Cómo funciona</a></div>
 <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-soft"><li>· Sesiones por videollamada</li><li>· Confidencial</li><li>· Según tu zona horaria</li><li>· Reservas en Google Calendar</li></ul>
 </div>
 <div><img src="https://primary.jwwb.nl/pexels/77/7776427.jpeg?enable-io=true&enable=upscale&crop=0.8333%3A1&width=800" alt="Persona en una videollamada de consulta online" class="w-full rounded-2xl object-cover" loading="lazy" /></div>
@@ -52,8 +52,8 @@
 <div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">2 · Contanos tu motivo</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Antes de reservar, respondés 4 preguntas cortas: motivo de consulta, si ya fuiste paciente, tu zona horaria y qué esperás de la sesión.</p></div>
 <div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">3 · Confirmación y recordatorio</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Recibís un mail de confirmación y la cita queda agendada en tu Google Calendar, además del calendario del profesional. Te llega un recordatorio antes de la sesión y podés reprogramar o cancelar desde el mismo evento.</p></div>
 </div>
-<div class="mt-8 flex flex-wrap gap-3"><!-- En una web real, reemplazar href="#" por el link de reservas del profesional en Google Calendar / Cal.com --><a href="#reservar" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar en Google Calendar</a><a data-wa href="#" data-wa-msg="Hola, quiero consultar antes de reservar un turno." class="rounded-full border border-line px-7 py-3.5 font-semibold">¿Preferís escribir primero?</a></div>
-<p class="mt-5 text-sm text-ink-soft">En una web real, el botón de reservar abre la página de reservas del profesional, con sus horarios reales en Google Calendar. Esta es una demo, por eso no abre una agenda real.</p>
+<div class="mt-8 flex flex-wrap gap-3"><!-- En una web real, reemplazar este botón por el link de reservas del profesional en Google Calendar / Cal.com --><a href="#reservar" data-booking-open class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar en Google Calendar</a><a data-wa href="#" data-wa-msg="Hola, quiero consultar antes de reservar un turno." class="rounded-full border border-line px-7 py-3.5 font-semibold">¿Preferís escribir primero?</a></div>
+<p class="mt-5 text-sm text-ink-soft">Al tocar Reservar se abre el formulario de prueba. En una web real, ese botón abre la página de reservas del profesional, con sus horarios reales en Google Calendar.</p>
 </section>
 <section id="preguntas" class="mx-auto max-w-6xl px-6 pb-20">
 <h2 class="font-display text-3xl font-bold tracking-tight">Preguntas frecuentes</h2>
@@ -65,8 +65,65 @@
 <div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Las sesiones son confidenciales?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sí, son por videollamada privada y lo que compartís en sesión queda entre vos y la profesional.</p></div>
 <div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Qué necesito para la primera sesión?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Un lugar tranquilo, conexión estable y, si querés, anotar brevemente el motivo de tu consulta.</p></div>
 </div></section>
-<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">¿Empezamos?</h2><p class="mt-3 text-white/80">Reservá tu turno en 1 minuto. Sin compromiso.</p><a href="#reservar" class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Reservar turno</a></div></section>
+<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">¿Empezamos?</h2><p class="mt-3 text-white/80">Reservá tu turno en 1 minuto. Sin compromiso.</p><a href="#reservar" data-booking-open class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Reservar turno</a></div></section>
 <footer class="mx-auto max-w-6xl px-6 py-10"><div class="flex flex-col justify-between gap-3 text-sm text-ink-soft sm:flex-row"><p class="font-display font-bold text-ink">Lucía Fernández · Psicóloga</p><p>Página demo · No es un negocio real · Hecha por <a href="index.html" class="underline font-semibold text-ink">Samuel·Web</a></p></div></footer>
 </main>
+<div id="bookingModal" class="hidden fixed inset-0 z-[100] flex items-end justify-center bg-black/50 p-4 sm:items-center" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+<div class="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4"><div><h3 id="bookingTitle" class="font-display text-2xl font-bold">Reservar turno</h3><p class="mt-1 text-sm text-ink-soft">Formulario de prueba: no envía datos, no crea ningún evento en Google Calendar ni envía ningún mail.</p></div><button type="button" data-booking-close aria-label="Cerrar formulario" class="rounded-full border border-line px-3 py-1 font-bold">×</button></div>
+<form id="bookingForm" class="mt-6 grid gap-4">
+<div><label class="text-sm font-semibold" for="bkNombre">Nombre</label><input id="bkNombre" required placeholder="Tu nombre" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div><label class="text-sm font-semibold" for="bkEmail">Email</label><input id="bkEmail" type="email" required placeholder="tu@email.com" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkServicio">Servicio</label><select id="bkServicio" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>Sesión individual (50 min)</option><option>Primera consulta</option></select></div>
+<div><label class="text-sm font-semibold" for="bkDia">Día</label><select id="bkDia" required class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></select></div>
+</div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkHora">Hora</label><select id="bkHora" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>09:00</option><option>10:00</option><option>11:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></div>
+<div><label class="text-sm font-semibold" for="bkPaciente">¿Ya fuiste paciente?</label><select id="bkPaciente" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>No</option><option>Sí</option></select></div>
+</div>
+<div><label class="text-sm font-semibold" for="bkZona">Zona horaria</label><select id="bkZona" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>Argentina</option><option>Chile</option><option>España</option><option>México</option><option>Otro</option></select></div>
+<div><label class="text-sm font-semibold" for="bkMotivo">Motivo de consulta</label><textarea id="bkMotivo" required rows="2" placeholder="Contanos brevemente tu motivo" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div><label class="text-sm font-semibold" for="bkEspera">¿Qué esperás de la sesión?</label><textarea id="bkEspera" rows="2" placeholder="Opcional" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div class="flex flex-wrap gap-3"><button type="submit" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Confirmar turno de prueba</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Cancelar</button></div>
+</form>
+<div id="bookingDone" class="hidden mt-6">
+<h3 class="font-display text-2xl font-bold">¡Turno de prueba confirmado!</h3>
+<p id="bookingSummary" class="mt-4 whitespace-pre-line text-sm leading-relaxed text-ink-soft"></p>
+<p class="mt-5 rounded-2xl bg-cream p-5 text-sm font-semibold">Demo: no se envió una reserva real, no se creó ningún evento en Google Calendar ni se envió ningún mail. En una web real, acá recibirías el mail de confirmación y la cita en tu Google Calendar.</p>
+<div class="mt-6 flex flex-wrap gap-3"><button type="button" id="bookingAgain" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar otro turno de prueba</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Cerrar</button></div>
+</div>
+</div>
+</div>
 <script>(function(){var n='5493547623741';document.querySelectorAll('[data-wa]').forEach(function(el){var m=el.getAttribute('data-wa-msg')||'Hola, vi la demo para profesionales y quiero consultar.';el.href='https://wa.me/'+n+'?text='+encodeURIComponent(m);el.target='_blank';el.rel='noopener';});})();</script>
+<script>
+(function () {
+  'use strict';
+  var modal = document.getElementById('bookingModal');
+  var form = document.getElementById('bookingForm');
+  var done = document.getElementById('bookingDone');
+  var summary = document.getElementById('bookingSummary');
+  var daySelect = document.getElementById('bkDia');
+  if (!modal || !form) return;
+  var fmt = new Intl.DateTimeFormat('es-AR', { weekday: 'long', day: 'numeric', month: 'long' });
+  for (var i = 0; i < 7; i++) {
+    var d = new Date(); d.setDate(d.getDate() + i);
+    var label = fmt.format(d); label = label.charAt(0).toUpperCase() + label.slice(1);
+    var opt = document.createElement('option'); opt.textContent = label; opt.value = label; daySelect.appendChild(opt);
+  }
+  function openModal() { modal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; var first = document.getElementById('bkNombre'); if (first) setTimeout(function () { first.focus(); }, 50); }
+  function closeModal() { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+  document.querySelectorAll('[data-booking-open]').forEach(function (el) { el.addEventListener('click', function (e) { e.preventDefault(); openModal(); }); });
+  document.querySelectorAll('[data-booking-close]').forEach(function (el) { el.addEventListener('click', closeModal); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var get = function (id) { return document.getElementById(id).value.trim(); };
+    summary.textContent = 'Servicio: ' + get('bkServicio') + '\nDía: ' + get('bkDia') + ' · Hora: ' + get('bkHora') + '\nNombre: ' + get('bkNombre') + '\nEmail: ' + get('bkEmail') + '\n¿Ya fue paciente?: ' + get('bkPaciente') + '\nZona horaria: ' + get('bkZona') + '\nMotivo: ' + get('bkMotivo') + (get('bkEspera') ? '\nQué espera: ' + get('bkEspera') : '');
+    form.classList.add('hidden'); done.classList.remove('hidden'); modal.scrollTop = 0;
+  });
+  document.getElementById('bookingAgain').addEventListener('click', function () { form.reset(); done.classList.add('hidden'); form.classList.remove('hidden'); });
+})();
+</script>
 </body></html>
