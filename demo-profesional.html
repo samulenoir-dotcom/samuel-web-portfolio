@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dra. Lucía Fernández · Psicóloga online | Turnos y consultas</title>
-<meta name="description" content="Ejemplo demo de web para profesional, estilo limpio y minimalista: servicios, cómo funciona la consulta online y turnos por WhatsApp." />
+<meta name="description" content="Ejemplo demo de web para profesional, estilo limpio y minimalista: servicios, cómo funciona la consulta online y turnos con reservas en Google Calendar." />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{colors:{paper:'#FFFFFF',cream:'#F4F7F6',ink:'#16211E','ink-soft':'#5B6B66',line:'#E2E8E6',brand:{DEFAULT:'#0F766E',deep:'#0B5E57',soft:'#E6F4F1'}},fontFamily:{display:['Sora','sans-serif'],body:['Inter','sans-serif']}}}}</script>
@@ -14,17 +14,17 @@
 <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
 <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 <a href="#inicio" class="font-display text-lg font-bold tracking-tight">Lucía Fernández <span class="font-normal text-ink-soft">· Psicóloga</span></a>
-<div class="hidden gap-8 text-sm font-medium text-ink-soft md:flex"><a href="#servicios" class="hover:text-ink">Servicios</a><a href="#como-funciona" class="hover:text-ink">Cómo funciona</a><a href="#preguntas" class="hover:text-ink">Preguntas</a></div>
-<a data-wa href="#" data-wa-msg="Hola, quiero consultar por un turno de psicología online." class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Pedir turno</a>
+<div class="hidden gap-8 text-sm font-medium text-ink-soft md:flex"><a href="#servicios" class="hover:text-ink">Servicios</a><a href="#como-funciona" class="hover:text-ink">Cómo funciona</a><a href="#reservar" class="hover:text-ink">Reservar</a><a href="#preguntas" class="hover:text-ink">Preguntas</a></div>
+<a href="#reservar" class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Reservar turno</a>
 </nav></header>
 <main id="inicio">
 <section class="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24 lg:items-center">
 <div>
 <p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Consultas online · En español</p>
 <h1 class="mt-5 font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Un espacio para hablar, desde donde estés.</h1>
-<p class="mt-5 max-w-lg text-lg leading-relaxed text-ink-soft">Sesiones online de 50 minutos, con horarios flexibles y un primer contacto sin compromiso. No importa en qué país vivas.</p>
-<div class="mt-8 flex flex-wrap gap-3"><a data-wa href="#" data-wa-msg="Hola, quiero pedir un turno para una primera consulta online." class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Pedir turno por WhatsApp</a><a href="#como-funciona" class="rounded-full border border-line px-7 py-3.5 font-semibold">Cómo funciona</a></div>
-<ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-soft"><li>· Sesiones por videollamada</li><li>· Confidencial</li><li>· Según tu zona horaria</li></ul>
+<p class="mt-5 max-w-lg text-lg leading-relaxed text-ink-soft">Sesiones online de 50 minutos. Reservá tu turno en 1 minuto, sin mensajes de ida y vuelta: elegís el horario en Google Calendar y te llega la confirmación con el link de videollamada.</p>
+<div class="mt-8 flex flex-wrap gap-3"><a href="#reservar" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar turno</a><a href="#como-funciona" class="rounded-full border border-line px-7 py-3.5 font-semibold">Cómo funciona</a></div>
+<ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-soft"><li>· Sesiones por videollamada</li><li>· Confidencial</li><li>· Según tu zona horaria</li><li>· Reservas en Google Calendar</li></ul>
 </div>
 <div><img src="https://primary.jwwb.nl/pexels/77/7776427.jpeg?enable-io=true&enable=upscale&crop=0.8333%3A1&width=800" alt="Persona en una videollamada de consulta online" class="w-full rounded-2xl object-cover" loading="lazy" /></div>
 </section>
@@ -39,16 +39,33 @@
 <section id="como-funciona" class="mx-auto max-w-6xl px-6 py-20">
 <h2 class="font-display text-3xl font-bold tracking-tight">Cómo funciona, en 3 pasos</h2>
 <ol class="mt-10 grid gap-4 md:grid-cols-3">
-<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">01</p><h3 class="mt-3 font-display font-bold">Escribe por WhatsApp</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Cuéntame brevemente qué buscas y en qué horario puedes.</p></li>
-<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">02</p><h3 class="mt-3 font-display font-bold">Agendamos la sesión</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Te envío el enlace de videollamada y la forma de pago.</p></li>
-<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">03</p><h3 class="mt-3 font-display font-bold">Sesión online</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Nos conectamos a la hora acordada, desde tu casa.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">01</p><h3 class="mt-3 font-display font-bold">Reservá en el calendario</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Elegís el día y la hora que te sirven, en tu zona horaria. Solo se muestran los horarios libres.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">02</p><h3 class="mt-3 font-display font-bold">Confirmación en Google Calendar</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Te llega el evento con el link de videollamada, un recordatorio antes de la sesión y la opción de reprogramar o cancelar.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">03</p><h3 class="mt-3 font-display font-bold">Sesión online</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Nos conectamos a la hora acordada, desde tu casa, con total confidencialidad.</p></li>
 </ol>
 </section>
-<section id="preguntas" class="mx-auto max-w-6xl px-6 pb-20"><div class="grid gap-4 md:grid-cols-2">
+<section id="reservar" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Reservar turno</h2>
+<p class="mt-4 max-w-2xl leading-relaxed text-ink-soft">Sin mensajes de ida y vuelta: el turno queda guardado en Google Calendar, con tu nombre, el servicio elegido y el link de videollamada. Todos usan Google Calendar, así que no hay que instalar nada nuevo.</p>
+<div class="mt-10 grid gap-4 md:grid-cols-3">
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">1 · Elegí tu horario</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Elegís el día y la hora en el calendario. Los horarios ocupados no se muestran, así no hay doble reserva.</p></div>
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">2 · Contanos tu motivo</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Antes de reservar, respondés 4 preguntas cortas: motivo de consulta, si ya fuiste paciente, tu zona horaria y qué esperás de la sesión.</p></div>
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">3 · Confirmación y recordatorio</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Recibís el evento en Google Calendar y un recordatorio antes de la sesión. Podés reprogramar o cancelar desde el mismo evento.</p></div>
+</div>
+<div class="mt-8 flex flex-wrap gap-3"><!-- En una web real, reemplazar href="#" por el link de reservas del profesional en Google Calendar / Cal.com --><a href="#reservar" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar en Google Calendar</a><a data-wa href="#" data-wa-msg="Hola, quiero consultar antes de reservar un turno." class="rounded-full border border-line px-7 py-3.5 font-semibold">¿Preferís escribir primero?</a></div>
+<p class="mt-5 text-sm text-ink-soft">En una web real, el botón de reservar abre la página de reservas del profesional, con sus horarios reales en Google Calendar. Esta es una demo, por eso no abre una agenda real.</p>
+</section>
+<section id="preguntas" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Preguntas frecuentes</h2>
+<div class="mt-10 grid gap-4 md:grid-cols-2">
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Cómo reservo mi turno?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Elegís día y hora en el calendario, respondés las preguntas previas y recibís la confirmación en Google Calendar con el link de videollamada.</p></div>
 <div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Puedo tomar sesiones desde otro país?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sí, las sesiones son online y se coordinan según tu zona horaria.</p></div>
 <div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Cómo se paga?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Por transferencia, Wise o PayPal, antes de la sesión.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Qué pasa si necesito cancelar o cambiar mi turno?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Podés reprogramar o cancelar desde el mismo evento de Google Calendar, con aviso previo.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Las sesiones son confidenciales?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sí, son por videollamada privada y lo que compartís en sesión queda entre vos y la profesional.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Qué necesito para la primera sesión?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Un lugar tranquilo, conexión estable y, si querés, anotar brevemente el motivo de tu consulta.</p></div>
 </div></section>
-<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">¿Empezamos?</h2><p class="mt-3 text-white/80">El primer paso es solo un mensaje. Sin compromiso.</p><a data-wa href="#" data-wa-msg="Hola, quiero pedir un turno para una primera consulta online." class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Pedir turno por WhatsApp</a></div></section>
+<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">¿Empezamos?</h2><p class="mt-3 text-white/80">Reservá tu turno en 1 minuto. Sin compromiso.</p><a href="#reservar" class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Reservar turno</a></div></section>
 <footer class="mx-auto max-w-6xl px-6 py-10"><div class="flex flex-col justify-between gap-3 text-sm text-ink-soft sm:flex-row"><p class="font-display font-bold text-ink">Lucía Fernández · Psicóloga</p><p>Página demo · No es un negocio real · Hecha por <a href="index.html" class="underline font-semibold text-ink">Samuel·Web</a></p></div></footer>
 </main>
 <script>(function(){var n='5493547623741';document.querySelectorAll('[data-wa]').forEach(function(el){var m=el.getAttribute('data-wa-msg')||'Hola, vi la demo para profesionales y quiero consultar.';el.href='https://wa.me/'+n+'?text='+encodeURIComponent(m);el.target='_blank';el.rel='noopener';});})();</script>

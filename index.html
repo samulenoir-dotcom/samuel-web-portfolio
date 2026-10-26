@@ -130,23 +130,32 @@
 
     <section id="precios" class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <h2 class="font-display text-3xl font-extrabold sm:text-4xl">Precios</h2>
+      <div class="mt-6 inline-flex rounded-lg border border-line bg-white p-1" role="group" aria-label="Elegir precios">
+        <button type="button" id="priceIntlBtn" aria-pressed="true" class="rounded-md bg-ink px-4 py-2 text-sm font-extrabold text-white">Internacional</button>
+        <button type="button" id="priceArBtn" aria-pressed="false" class="rounded-md px-4 py-2 text-sm font-extrabold">Argentina</button>
+      </div>
+      <p class="mt-3 text-sm font-bold text-ink-soft">Precios en dólares. Al elegir Argentina se muestra el descuento local.</p>
       <div class="mt-10 grid gap-6 md:grid-cols-3">
         <article class="rounded-2xl border border-line bg-white p-8">
           <h3 class="font-display text-xl font-extrabold">Landing</h3>
-          <p class="mt-4 font-display text-4xl font-extrabold">US$ 299</p>
+          <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 299" data-price-ar="US$ 199">US$ 299</span></p>
+          <p class="ar-saving mt-2 hidden text-sm font-bold text-brand-deep">Antes US$ 299 · Ahorrás US$ 100</p>
           <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Landing." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
         <article class="rounded-2xl border-2 border-ink bg-ink p-8 text-white">
           <h3 class="font-display text-xl font-extrabold">Web completa</h3>
-          <p class="mt-4 font-display text-4xl font-extrabold">US$ 590</p>
+          <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 590" data-price-ar="US$ 399">US$ 590</span></p>
+          <p class="ar-saving mt-2 hidden text-sm font-bold text-white/80">Antes US$ 590 · Ahorrás US$ 191</p>
           <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Web completa." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
         <article class="rounded-2xl border border-line bg-white p-8">
           <h3 class="font-display text-xl font-extrabold">Web + mantenimiento</h3>
-          <p class="mt-4 font-display text-4xl font-extrabold">US$ 89<span class="text-lg">/mes</span></p>
+          <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 89" data-price-ar="US$ 49">US$ 89</span><span class="text-lg">/mes</span></p>
+          <p class="ar-saving mt-2 hidden text-sm font-bold text-brand-deep">Antes US$ 89/mes · Ahorrás US$ 40/mes</p>
           <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Web + mantenimiento mensual." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
       </div>
+      <p id="arNote" class="mt-6 hidden rounded-2xl border border-line bg-cream p-5 text-sm font-bold">Descuento para Argentina: válido solo para negocios que operan en Argentina. Pago en pesos al equivalente del día de la cotización.</p>
     </section>
 
     <footer id="contacto" class="border-t border-line bg-cream">
@@ -198,6 +207,28 @@
       copyBtn.addEventListener('click', function () {
         if (navigator.clipboard) { navigator.clipboard.writeText(lastMessage).then(function(){ copyBtn.textContent = '¡Mensaje copiado!'; }); }
       });
+    })();
+  </script>
+  <script>
+    (function () {
+      'use strict';
+      var intlBtn = document.getElementById('priceIntlBtn');
+      var arBtn = document.getElementById('priceArBtn');
+      var note = document.getElementById('arNote');
+      if (!intlBtn || !arBtn) return;
+      function setMode(argentina) {
+        document.querySelectorAll('[data-price-value]').forEach(function (el) {
+          el.textContent = argentina ? el.getAttribute('data-price-ar') : el.getAttribute('data-price-intl');
+        });
+        document.querySelectorAll('.ar-saving').forEach(function (el) { el.classList.toggle('hidden', !argentina); });
+        if (note) note.classList.toggle('hidden', !argentina);
+        intlBtn.setAttribute('aria-pressed', argentina ? 'false' : 'true');
+        arBtn.setAttribute('aria-pressed', argentina ? 'true' : 'false');
+        intlBtn.className = argentina ? 'rounded-md px-4 py-2 text-sm font-extrabold' : 'rounded-md bg-ink px-4 py-2 text-sm font-extrabold text-white';
+        arBtn.className = argentina ? 'rounded-md bg-ink px-4 py-2 text-sm font-extrabold text-white' : 'rounded-md px-4 py-2 text-sm font-extrabold';
+      }
+      intlBtn.addEventListener('click', function () { setMode(false); });
+      arBtn.addEventListener('click', function () { setMode(true); });
     })();
   </script>
 </body>
