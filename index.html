@@ -140,19 +140,22 @@
           <h3 class="font-display text-xl font-extrabold">Landing</h3>
           <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 299" data-price-ar="US$ 199">US$ 299</span></p>
           <p class="ar-saving mt-2 hidden text-sm font-bold text-brand-deep">Antes US$ 299 · Ahorrás US$ 100</p>
-          <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Landing." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
+          <p class="mt-2 text-sm font-bold text-ink-soft">1 página, formulario y botón de WhatsApp.</p>
+          <a data-wa data-plan="Landing" data-plan-price-intl="US$ 299" data-plan-price-ar="US$ 199" href="#" data-wa-msg="Hola, me interesa el plan Landing (Internacional, US$ 299)." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
         <article class="rounded-2xl border-2 border-ink bg-ink p-8 text-white">
           <h3 class="font-display text-xl font-extrabold">Web completa</h3>
           <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 590" data-price-ar="US$ 399">US$ 590</span></p>
           <p class="ar-saving mt-2 hidden text-sm font-bold text-white/80">Antes US$ 590 · Ahorrás US$ 191</p>
-          <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Web completa." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
+          <p class="mt-2 text-sm font-bold text-white/80">Varias páginas, servicios, reserva y contacto.</p>
+          <a data-wa data-plan="Web completa" data-plan-price-intl="US$ 590" data-plan-price-ar="US$ 399" href="#" data-wa-msg="Hola, me interesa el plan Web completa (Internacional, US$ 590)." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
         <article class="rounded-2xl border border-line bg-white p-8">
           <h3 class="font-display text-xl font-extrabold">Web + mantenimiento</h3>
           <p class="mt-4 font-display text-4xl font-extrabold"><span data-price-value data-price-intl="US$ 89" data-price-ar="US$ 49">US$ 89</span><span class="text-lg">/mes</span></p>
           <p class="ar-saving mt-2 hidden text-sm font-bold text-brand-deep">Antes US$ 89/mes · Ahorrás US$ 40/mes</p>
-          <a data-wa href="#" data-wa-msg="Hola, me interesa el plan Web + mantenimiento mensual." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
+          <p class="mt-2 text-sm font-bold text-ink-soft">Cambios, soporte y web siempre actualizada.</p>
+          <a data-wa data-plan="Web + mantenimiento" data-plan-price-intl="US$ 89/mes" data-plan-price-ar="US$ 49/mes" href="#" data-wa-msg="Hola, me interesa el plan Web + mantenimiento (Internacional, US$ 89/mes)." class="mt-6 block rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white hover:bg-brand-deep">Empezar</a>
         </article>
       </div>
       <p id="arNote" class="mt-6 hidden rounded-2xl border border-line bg-cream p-5 text-sm font-bold">Descuento para Argentina: válido solo para negocios que operan en Argentina. Pago en pesos al equivalente del día de la cotización.</p>
@@ -162,7 +165,11 @@
       <div class="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2">
         <div>
           <h2 class="font-display text-3xl font-extrabold sm:text-4xl">¿Empezamos?</h2>
-          <a data-wa href="#" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-brand px-6 py-4 font-extrabold text-white hover:bg-brand-deep">Escribir por WhatsApp</a>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a data-wa href="#" class="inline-flex items-center gap-2 rounded-lg bg-brand px-6 py-4 font-extrabold text-white hover:bg-brand-deep">Escribir por WhatsApp</a>
+            <!-- Agendar llamada: hoy abre WhatsApp para coordinar la llamada. Reemplazar href por el link de Google Calendar (Appointment schedule) de Samuel cuando lo comparta, para que la reserva sea directa. -->
+            <a data-wa href="#" data-wa-msg="Hola Samuel, quiero agendar una llamada gratuita para hablar de mi web." class="inline-flex items-center gap-2 rounded-lg border border-ink bg-white px-6 py-4 font-extrabold hover:bg-cream">Agendar llamada gratuita</a>
+          </div>
         </div>
         <form id="leadForm" class="grid gap-3">
           <input required name="nombre" placeholder="Tu nombre" class="rounded-lg border border-line bg-white px-4 py-3 text-sm font-semibold" />
@@ -219,6 +226,13 @@
       function setMode(argentina) {
         document.querySelectorAll('[data-price-value]').forEach(function (el) {
           el.textContent = argentina ? el.getAttribute('data-price-ar') : el.getAttribute('data-price-intl');
+        });
+        document.querySelectorAll('[data-plan]').forEach(function (el) {
+          var price = argentina ? el.getAttribute('data-plan-price-ar') : el.getAttribute('data-plan-price-intl');
+          var msg = 'Hola, me interesa el plan ' + el.getAttribute('data-plan') + ' (' + (argentina ? 'Argentina' : 'Internacional') + ', ' + price + ').';
+          el.setAttribute('data-wa-msg', msg);
+          el.href = 'https://wa.me/5493547623741?text=' + encodeURIComponent(msg);
+          el.target = '_blank'; el.rel = 'noopener';
         });
         document.querySelectorAll('.ar-saving').forEach(function (el) { el.classList.toggle('hidden', !argentina); });
         if (note) note.classList.toggle('hidden', !argentina);
