@@ -1,4 +1,4 @@
-# Samuel · Diseño web para negocios
+# Mesa · Diseño web para negocios
 
 Sitio en vivo: https://samulenoir-dotcom.github.io/samuel-web-portfolio/
 
