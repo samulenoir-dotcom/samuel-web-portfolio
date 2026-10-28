@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clínica Dental Aurora · Demo | Citas y tratamientos</title>
+<meta name="description" content="Demo para clínica dental: servicios, cómo funciona la cita presencial y reserva con Google Calendar." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{paper:'#FFFFFF',cream:'#F4F7F6',ink:'#16211E','ink-soft':'#5B6B66',line:'#E2E8E6',brand:{DEFAULT:'#0F766E',deep:'#0B5E57',soft:'#E6F4F1'}},fontFamily:{display:['Sora','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+<style>html{scroll-behavior:smooth}::selection{background:#0F766E;color:#fff}:focus-visible{outline:2px solid #0F766E;outline-offset:3px;border-radius:6px}</style>
+</head>
+<body class="bg-paper text-ink font-body antialiased">
+<div class="bg-ink text-white text-xs font-medium text-center px-4 py-2.5">PÁGINA DEMO · Estilo limpio y minimalista, creado por Mesa — <a href="index.html" class="underline">Volver al portfolio</a> · <a data-wa href="#" data-wa-msg="Hola Samuel, vi la demo para clínicas dentales y quiero una web así para mi clínica." class="underline">Quiero una web así</a></div>
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
+<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+<a href="#inicio" class="font-display text-lg font-bold tracking-tight">Clínica Dental Aurora <span class="font-normal text-ink-soft">· Demo</span></a>
+<div class="hidden gap-8 text-sm font-medium text-ink-soft md:flex"><a href="#servicios" class="hover:text-ink">Servicios</a><a href="#como-funciona" class="hover:text-ink">Cómo funciona</a><a href="#reservar" class="hover:text-ink">Reservar</a><a href="#preguntas" class="hover:text-ink">Preguntas</a></div>
+<a href="#reservar" data-booking-open class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Reservar cita</a>
+</nav></header>
+<main id="inicio">
+<section class="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24 lg:items-center">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Clínica dental · Citas presenciales</p>
+<h1 class="mt-5 font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Tu próxima cita dental, reservada en 1 minuto.</h1>
+<p class="mt-5 max-w-lg text-lg leading-relaxed text-ink-soft">Revisión, limpieza y tratamientos. Reserva tu cita presencial online, sin llamar.</p>
+<div class="mt-8 flex flex-wrap gap-3"><a href="#reservar" data-booking-open class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar cita</a><a href="#como-funciona" class="rounded-full border border-line px-7 py-3.5 font-semibold">Cómo funciona</a></div>
+</div>
+<figure><img src="https://images.pexels.com/photos/3884093/pexels-photo-3884093.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Dentistas con mascarilla y guantes atendiendo a un paciente en una clínica dental moderna" class="w-full rounded-2xl object-cover" loading="lazy" /><figcaption class="mt-3 text-xs text-ink-soft">Foto de referencia: Andrea Piacquadio / Pexels. Imagen ilustrativa, no es la clínica real.</figcaption></figure>
+</section>
+<section id="servicios" class="bg-cream border-y border-line"><div class="mx-auto max-w-6xl px-6 py-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Servicios</h2>
+<div class="mt-10 grid gap-4 md:grid-cols-3">
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Primera visita y revisión</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Revisión completa y plan de tratamiento, sin compromiso.</p><p class="mt-6 font-display text-2xl font-bold">A cotizar tras diagnóstico</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Limpieza dental</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Limpieza y control periódico, con cita en tu calendario.</p><p class="mt-6 font-display text-2xl font-bold">A cotizar tras diagnóstico</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Implantes y rehabilitación</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Reposición de piezas con plan personalizado tras diagnóstico.</p><p class="mt-6 font-display text-2xl font-bold">A cotizar tras diagnóstico</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Ortodoncia</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Estudio y seguimiento de la alineación dental, con plan personalizado.</p><p class="mt-6 font-display text-2xl font-bold">A cotizar tras diagnóstico</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Urgencias dentales</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Atención de molestias agudas, según disponibilidad de agenda.</p><p class="mt-6 font-display text-2xl font-bold">A cotizar tras diagnóstico</p></article>
+</div>
+</div></section>
+<section class="mx-auto max-w-6xl px-6 py-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Primera visita sin compromiso</h2>
+<p class="mt-4 max-w-2xl leading-relaxed text-ink-soft">En la primera visita se revisa su caso y se explica el plan antes de decidir nada.</p>
+<div class="mt-8 grid gap-4 md:grid-cols-3">
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">Equipo</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">En una web real, aquí irían los profesionales reales de la clínica.</p></div>
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">Diagnóstico primero</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">El plan y el presupuesto se explican tras la revisión.</p></div>
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">Cita presencial</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Reserva online y asistencia a la clínica a la hora acordada.</p></div>
+</div>
+</section>
+<section id="como-funciona" class="mx-auto max-w-6xl px-6 py-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Cómo funciona, en 3 pasos</h2>
+<ol class="mt-10 grid gap-4 md:grid-cols-3">
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">01</p><h3 class="mt-3 font-display font-bold">Reserva en el calendario</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Elige día y hora en su zona horaria.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">02</p><h3 class="mt-3 font-display font-bold">Confirmación en Google Calendar</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Mail de confirmación y cita en tu Google Calendar.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">03</p><h3 class="mt-3 font-display font-bold">Cita en la clínica</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Asiste a la clínica a la hora acordada, con su cita ya confirmada.</p></li>
+</ol>
+</section>
+<section id="reservar" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Reservar cita</h2>
+<div class="mt-8 flex flex-wrap gap-3"><!-- En una web real, reemplazar este botón por el link de reservas de la clínica en Google Calendar / Cal.com --><a href="#reservar" data-booking-open class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar en Google Calendar</a><a data-wa href="#" data-wa-msg="Hola, quiero consultar antes de reservar una cita." class="rounded-full border border-line px-7 py-3.5 font-semibold">¿Prefieres escribir primero?</a></div>
+</section>
+<section id="preguntas" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Preguntas frecuentes</h2>
+<div class="mt-10 grid gap-4 md:grid-cols-2">
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Necesito llamar para reservar?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">No. Reserve online en el calendario y recibirá la confirmación por mail.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Cómo se paga?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">En la clínica, según lo acordado en la cita.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Puedo reprogramar mi cita?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sí, desde tu Google Calendar, en una web real.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿La primera visita tiene compromiso?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">No. Se revisa su caso y se explica el plan antes de decidir nada.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">¿Qué hacer si tiene una urgencia?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Reserve una cita de urgencias y se le atenderá según disponibilidad de agenda.</p></div>
+</div></section>
+<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">¿Reservamos tu cita?</h2><p class="mt-3 text-white/80">Reserva en 1 minuto. Sin compromiso.</p><a href="#reservar" data-booking-open class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Reservar cita</a></div></section>
+<footer class="mx-auto max-w-6xl px-6 py-10"><div class="flex flex-col justify-between gap-3 text-sm text-ink-soft sm:flex-row"><p class="font-display font-bold text-ink">Clínica Dental Aurora · Demo</p><p>Página demo · Clínica ficticia, no es un negocio real · Hecha por <a href="index.html" class="underline font-semibold text-ink">Mesa</a></p></div></footer>
+<section style="background:#ffffff;color:#191C19;border-top:1px solid #E3E0D8;padding:64px 20px;text-align:center">
+<div style="max-width:720px;margin:0 auto">
+<p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5A5E58">Mesa · Diseño web</p>
+<h2 style="margin:12px 0 0;font-size:28px;line-height:1.2;font-weight:800">¿Querés una web así para tu negocio?</h2>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.5;color:#5A5E58">Esta es solo una demo. Mesa puede hacer una parecida, con tus fotos, tus servicios y tu forma de atender.</p>
+<div style="margin:24px 0 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+<a data-wa href="#" data-wa-msg="Hola Samuel, vi la demo para clínicas dentales y quiero una web así para mi clínica." style="display:inline-block;background:#0EA36B;color:#ffffff;padding:14px 28px;border-radius:10px;font-weight:800;text-decoration:none">Quiero una web así</a>
+<a href="index.html" style="display:inline-block;border:1px solid #191C19;color:#191C19;padding:14px 28px;border-radius:10px;font-weight:700;text-decoration:none">Volver al portfolio</a>
+</div>
+</div>
+</section>
+</main>
+<div id="bookingModal" class="hidden fixed inset-0 z-[100] flex items-end justify-center bg-black/50 p-4 sm:items-center" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+<div class="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4"><div><h3 id="bookingTitle" class="font-display text-2xl font-bold">Reservar cita</h3><p class="mt-1 text-sm text-ink-soft">Formulario de prueba: no envía datos, no crea ningún evento en Google Calendar ni envía ningún mail.</p></div><button type="button" data-booking-close aria-label="Cerrar formulario" class="rounded-full border border-line px-3 py-1 font-bold">×</button></div>
+<form id="bookingForm" class="mt-6 grid gap-4">
+<div><label class="text-sm font-semibold" for="bkNombre">Nombre</label><input id="bkNombre" required placeholder="Tu nombre" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div><label class="text-sm font-semibold" for="bkEmail">Email</label><input id="bkEmail" type="email" required placeholder="tu@email.com" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkServicio">Servicio</label><select id="bkServicio" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>Primera visita y revisión</option><option>Limpieza dental</option><option>Implantes y rehabilitación</option><option>Ortodoncia</option><option>Urgencias dentales</option></select></div>
+<div><label class="text-sm font-semibold" for="bkDia">Día</label><select id="bkDia" required class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></select></div>
+</div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkHora">Hora</label><select id="bkHora" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>09:00</option><option>10:00</option><option>11:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></div>
+<div><label class="text-sm font-semibold" for="bkPaciente">¿Ya fuiste paciente?</label><select id="bkPaciente" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>No</option><option>Sí</option></select></div>
+</div>
+<div><label class="text-sm font-semibold" for="bkZona">Zona horaria</label><select id="bkZona" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>España</option><option>Argentina</option><option>Chile</option><option>México</option><option>Otro</option></select></div>
+<div><label class="text-sm font-semibold" for="bkMotivo">Motivo de la visita</label><textarea id="bkMotivo" required rows="2" placeholder="Cuéntenos brevemente el motivo de su visita" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div><label class="text-sm font-semibold" for="bkEspera">¿Algo que debamos saber antes?</label><textarea id="bkEspera" rows="2" placeholder="Opcional" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div class="flex flex-wrap gap-3"><button type="submit" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Confirmar cita de prueba</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Cancelar</button></div>
+</form>
+<div id="bookingDone" class="hidden mt-6">
+<h3 class="font-display text-2xl font-bold">¡Cita de prueba confirmada!</h3>
+<p id="bookingSummary" class="mt-4 whitespace-pre-line text-sm leading-relaxed text-ink-soft"></p>
+<p class="mt-5 rounded-2xl bg-cream p-5 text-sm font-semibold">Demo: no se envió una reserva real, no se creó ningún evento en Google Calendar ni se envió ningún mail. En una web real, recibirías el mail de confirmación y la cita en tu Google Calendar.</p>
+<div class="mt-6 flex flex-wrap gap-3"><button type="button" id="bookingAgain" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Reservar otra cita de prueba</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Cerrar</button></div>
+</div>
+</div>
+</div>
+<script>(function(){var n='5493547623741';document.querySelectorAll('[data-wa]').forEach(function(el){var m=el.getAttribute('data-wa-msg')||'Hola, vi la demo para clínicas dentales y quiero consultar.';el.href='https://wa.me/'+n+'?text='+encodeURIComponent(m);el.target='_blank';el.rel='noopener';});})();</script>
+<script>
+(function () {
+  'use strict';
+  var modal = document.getElementById('bookingModal');
+  var form = document.getElementById('bookingForm');
+  var done = document.getElementById('bookingDone');
+  var summary = document.getElementById('bookingSummary');
+  var daySelect = document.getElementById('bkDia');
+  if (!modal || !form) return;
+  var fmt = new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  for (var i = 0; i < 7; i++) {
+    var d = new Date(); d.setDate(d.getDate() + i);
+    var label = fmt.format(d); label = label.charAt(0).toUpperCase() + label.slice(1);
+    var opt = document.createElement('option'); opt.textContent = label; opt.value = label; daySelect.appendChild(opt);
+  }
+  function openModal() { modal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; var first = document.getElementById('bkNombre'); if (first) setTimeout(function () { first.focus(); }, 50); }
+  function closeModal() { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+  document.querySelectorAll('[data-booking-open]').forEach(function (el) { el.addEventListener('click', function (e) { e.preventDefault(); openModal(); }); });
+  document.querySelectorAll('[data-booking-close]').forEach(function (el) { el.addEventListener('click', closeModal); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var get = function (id) { return document.getElementById(id).value.trim(); };
+    summary.textContent = 'Tratamiento: ' + get('bkServicio') + '\nDía: ' + get('bkDia') + ' · Hora: ' + get('bkHora') + '\nNombre: ' + get('bkNombre') + '\nEmail: ' + get('bkEmail') + '\n¿Ya fue paciente?: ' + get('bkPaciente') + '\nZona horaria: ' + get('bkZona') + '\nMotivo: ' + get('bkMotivo') + (get('bkEspera') ? '\nQué espera: ' + get('bkEspera') : '');
+    form.classList.add('hidden'); done.classList.remove('hidden'); modal.scrollTop = 0;
+  });
+  document.getElementById('bookingAgain').addEventListener('click', function () { form.reset(); done.classList.add('hidden'); form.classList.remove('hidden'); });
+})();
+</script>
+</body></html>
