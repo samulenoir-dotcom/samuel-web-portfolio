@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PhysioLife Clinic · Demo | Physiotherapy and rehabilitation</title>
+<meta name="description" content="Demo for a physiotherapy clinic: services, how the assessment works, and online booking with Google Calendar." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{paper:'#FFFFFF',cream:'#F2F7F7',ink:'#14201F','ink-soft':'#5B6B66',line:'#DEE8E8',brand:{DEFAULT:'#0E7490',deep:'#155E75',soft:'#E6F2F5'}},fontFamily:{display:['Sora','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+<style>html{scroll-behavior:smooth}::selection{background:#0E7490;color:#fff}:focus-visible{outline:2px solid #0E7490;outline-offset:3px;border-radius:6px}</style>
+</head>
+<body class="bg-paper text-ink font-body antialiased">
+<div class="bg-ink text-white text-xs font-medium text-center px-4 py-2.5">DEMO PAGE · Clean, minimalist style, created by Mesa — <a href="index.html" class="underline">Back to portfolio</a> · <a data-wa href="#" data-wa-msg="Hi Samuel, I saw the demo for physiotherapy clinics and I want a website like this for my clinic." class="underline">I want a website like this</a></div>
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
+<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+<a href="#home" class="font-display text-lg font-bold tracking-tight">PhysioLife Clinic <span class="font-normal text-ink-soft">· Demo</span></a>
+<div class="hidden gap-8 text-sm font-medium text-ink-soft md:flex"><a href="#services" class="hover:text-ink">Services</a><a href="#how-it-works" class="hover:text-ink">How it works</a><a href="#book" class="hover:text-ink">Book</a><a href="#faq" class="hover:text-ink">FAQ</a></div>
+<a href="#book" data-booking-open class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-deep">Book a session</a>
+</nav></header>
+<main id="home">
+<section class="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24 lg:items-center">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Physiotherapy · In the clinic and at home</p>
+<h1 class="mt-5 font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Move better. Live without pain.</h1>
+<p class="mt-5 max-w-lg text-lg leading-relaxed text-ink-soft">Assessment, a personalized plan, and rehab sessions. Book your first session online, no phone call needed.</p>
+<div class="mt-8 flex flex-wrap gap-3"><a href="#book" data-booking-open class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Book a session</a><a href="#how-it-works" class="rounded-full border border-line px-7 py-3.5 font-semibold">How it works</a></div>
+</div>
+<figure><img src="https://images.pexels.com/photos/5793696/pexels-photo-5793696.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Physiotherapist treating a patient's neck and shoulder at the clinic" class="w-full rounded-2xl object-cover" loading="lazy" /><figcaption class="mt-3 text-xs text-ink-soft">Reference photo: Yan Krukau / Pexels. Illustrative image, not the real clinic.</figcaption></figure>
+</section>
+<section id="services" class="bg-cream border-y border-line"><div class="mx-auto max-w-6xl px-6 py-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Services</h2>
+<div class="mt-10 grid gap-4 md:grid-cols-3">
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Sports physiotherapy</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Recover from sports injuries and get back to training safely.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Back and neck pain</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Treatment for lower back pain, neck pain, and muscle tension, with hands-on therapy and exercise.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Post-injury rehabilitation</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Recovery after sprains, fractures, or surgery, with a phased plan.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Physiotherapy at home</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sessions at your home when you can't make it to the clinic.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Therapeutic pilates</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Guided exercise to build strength, correct posture, and prevent setbacks.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+<article class="rounded-2xl border border-line bg-white p-7"><h3 class="font-display font-bold">Prevention and reconditioning</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Exercise programs to stay active and keep the pain from coming back.</p><p class="mt-6 font-display text-2xl font-bold">Priced after assessment</p></article>
+</div>
+</div></section>
+<section class="mx-auto max-w-6xl px-6 py-20">
+<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+<div>
+<h2 class="font-display text-3xl font-bold tracking-tight">Your first visit, no strings attached</h2>
+<p class="mt-4 max-w-2xl leading-relaxed text-ink-soft">At your first visit, we assess your case, measure your mobility, and explain your plan before you commit to anything.</p>
+<div class="mt-8 grid gap-4 sm:grid-cols-2">
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">Full assessment</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">We review your history, your pain, and your mobility before suggesting any treatment.</p></div>
+<div class="rounded-2xl bg-cream p-7"><h3 class="font-display font-bold">A written plan</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sessions, goals, and exercises for home, explained clearly.</p></div>
+</div>
+</div>
+<figure><img src="https://images.pexels.com/photos/5793889/pexels-photo-5793889.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Physiotherapist guiding a shoulder mobilization for a patient sitting on the treatment table" class="w-full rounded-2xl object-cover" loading="lazy" /><figcaption class="mt-3 text-xs text-ink-soft">Reference photo: Yan Krukau / Pexels. Illustrative image, not the real clinic.</figcaption></figure>
+</div>
+</section>
+<section id="how-it-works" class="mx-auto max-w-6xl px-6 py-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">How it works, in 3 steps</h2>
+<ol class="mt-10 grid gap-4 md:grid-cols-3">
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">01</p><h3 class="mt-3 font-display font-bold">Assessment</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Book your first session and tell us what hurts and since when.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">02</p><h3 class="mt-3 font-display font-bold">Personalized plan</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Get a plan with the number of sessions and exercises for home.</p></li>
+<li class="rounded-2xl bg-cream p-7"><p class="text-sm font-bold text-brand">03</p><h3 class="mt-3 font-display font-bold">Sessions and follow-up</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Sessions at the clinic or at home, with follow-up on your progress.</p></li>
+</ol>
+</section>
+<section class="mx-auto max-w-6xl px-6 pb-20">
+<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+<figure><img src="https://images.pexels.com/photos/6933308/pexels-photo-6933308.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Physiotherapist guiding a shoulder stretch for a patient" class="w-full rounded-2xl object-cover" loading="lazy" /><figcaption class="mt-3 text-xs text-ink-soft">Reference photo: Pexels. Illustrative image, not the real clinic.</figcaption></figure>
+<div>
+<h2 class="font-display text-3xl font-bold tracking-tight">Therapeutic exercise, not just the treatment table</h2>
+<p class="mt-4 leading-relaxed text-ink-soft">Most of the recovery happens through guided exercise: strength, mobility, and movement control. You learn the exercises at the clinic and practice them at home, with clear guidance and follow-up at every session.</p>
+</div>
+</div>
+</section>
+<section id="book" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Book a session</h2>
+<p class="mt-4 max-w-2xl leading-relaxed text-ink-soft">Try how a real booking works: book a free call with Mesa and you'll see the calendar, the confirmation, and the reminder exactly as a patient would. On your clinic's website, this same button would open your clinic's calendar.</p>
+<div class="mt-8 flex flex-wrap gap-3"><a href="https://calendar.app.google/AKsqoZYm55JPzy9b7" target="_blank" rel="noopener" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Book a free call with Mesa</a><a href="#book" data-booking-open class="rounded-full border border-line px-7 py-3.5 font-semibold">See the clinic's test booking</a><a data-wa href="#" data-wa-msg="Hi, I'd like to ask a question before booking a session." class="rounded-full border border-line px-7 py-3.5 font-semibold">Prefer to write first?</a></div>
+</section>
+<section id="faq" class="mx-auto max-w-6xl px-6 pb-20">
+<h2 class="font-display text-3xl font-bold tracking-tight">Frequently asked questions</h2>
+<div class="mt-10 grid gap-4 md:grid-cols-2">
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">Do I need a doctor's referral?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">No. You can book directly; at the assessment we decide whether any tests or a referral are needed.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">How many sessions will I need?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">It depends on your case. After the assessment, we suggest a plan with an estimated number of sessions.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">Do you treat patients at home?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Yes, in the clinic's area, depending on availability.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">Can I reschedule my session?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Yes, from your Google Calendar, on a real website.</p></div>
+<div class="rounded-2xl border border-line p-7"><h3 class="font-display font-bold">What should I bring to my first session?</h3><p class="mt-2 text-sm leading-relaxed text-ink-soft">Comfortable clothes and, if you have them, any reports or scans related to your pain.</p></div>
+</div></section>
+<section class="bg-brand"><div class="mx-auto max-w-6xl px-6 py-20 text-center"><h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to start your recovery?</h2><p class="mt-3 text-white/80">Book in 1 minute. No commitment.</p><a href="#book" data-booking-open class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-semibold text-brand-deep">Book a session</a></div></section>
+<footer class="mx-auto max-w-6xl px-6 py-10"><div class="flex flex-col justify-between gap-3 text-sm text-ink-soft sm:flex-row"><p class="font-display font-bold text-ink">PhysioLife Clinic · Demo</p><p>Demo page · Fictional clinic, not a real business · Made by <a href="index.html" class="underline font-semibold text-ink">Mesa</a></p></div></footer>
+<section style="background:#ffffff;color:#191C19;border-top:1px solid #E3E0D8;padding:64px 20px;text-align:center">
+<div style="max-width:720px;margin:0 auto">
+<p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5A5E58">Mesa · Web design</p>
+<h2 style="margin:12px 0 0;font-size:28px;line-height:1.2;font-weight:800">Want a website like this for your business?</h2>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.5;color:#5A5E58">This is just a demo. Mesa can build one like it, with your photos, your services, and your way of working.</p>
+<div style="margin:24px 0 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+<a data-wa href="#" data-wa-msg="Hi Samuel, I saw the demo for physiotherapy clinics and I want a website like this for my clinic." style="display:inline-block;background:#0EA36B;color:#ffffff;padding:14px 28px;border-radius:10px;font-weight:800;text-decoration:none">I want a website like this</a>
+<a href="index.html" style="display:inline-block;border:1px solid #191C19;color:#191C19;padding:14px 28px;border-radius:10px;font-weight:700;text-decoration:none">Back to portfolio</a>
+</div>
+</div>
+</section>
+</main>
+<div id="bookingModal" class="hidden fixed inset-0 z-[100] flex items-end justify-center bg-black/50 p-4 sm:items-center" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+<div class="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 sm:p-8">
+<div class="flex items-start justify-between gap-4"><div><h3 id="bookingTitle" class="font-display text-2xl font-bold">Book a session</h3><p class="mt-1 text-sm text-ink-soft">Test form: it doesn't send any data, create a Google Calendar event, or send any email.</p></div><button type="button" data-booking-close aria-label="Close form" class="rounded-full border border-line px-3 py-1 font-bold">×</button></div>
+<form id="bookingForm" class="mt-6 grid gap-4">
+<div><label class="text-sm font-semibold" for="bkNombre">Name</label><input id="bkNombre" required placeholder="Your name" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div><label class="text-sm font-semibold" for="bkEmail">Email</label><input id="bkEmail" type="email" required placeholder="you@email.com" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm" /></div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkServicio">Service</label><select id="bkServicio" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>First visit and assessment</option><option>Sports physiotherapy</option><option>Back and neck pain</option><option>Post-injury rehabilitation</option><option>Physiotherapy at home</option><option>Therapeutic pilates</option><option>Prevention and reconditioning</option></select></div>
+<div><label class="text-sm font-semibold" for="bkDia">Day</label><select id="bkDia" required class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></select></div>
+</div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div><label class="text-sm font-semibold" for="bkHora">Time</label><select id="bkHora" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
+<div><label class="text-sm font-semibold" for="bkPaciente">Have you been a patient before?</label><select id="bkPaciente" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>No</option><option>Yes</option></select></div>
+</div>
+<div><label class="text-sm font-semibold" for="bkZona">Time zone</label><select id="bkZona" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Australia</option><option>Other</option></select></div>
+<div><label class="text-sm font-semibold" for="bkMotivo">Reason for your visit</label><textarea id="bkMotivo" required rows="2" placeholder="Tell us briefly what hurts and since when" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div><label class="text-sm font-semibold" for="bkEspera">Anything we should know beforehand?</label><textarea id="bkEspera" rows="2" placeholder="Optional" class="mt-1 w-full rounded-xl border border-line px-4 py-3 text-sm"></textarea></div>
+<div class="flex flex-wrap gap-3"><button type="submit" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Confirm test session</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Cancel</button></div>
+</form>
+<div id="bookingDone" class="hidden mt-6">
+<h3 class="font-display text-2xl font-bold">Test session confirmed!</h3>
+<p id="bookingSummary" class="mt-4 whitespace-pre-line text-sm leading-relaxed text-ink-soft"></p>
+<p class="mt-5 rounded-2xl bg-cream p-5 text-sm font-semibold">Demo: no real booking was sent, no Google Calendar event was created, and no email was sent. On a real website, you'd receive the confirmation email and the appointment in your Google Calendar.</p>
+<div class="mt-6 flex flex-wrap gap-3"><button type="button" id="bookingAgain" class="rounded-full bg-brand px-7 py-3.5 font-semibold text-white hover:bg-brand-deep">Book another test session</button><button type="button" data-booking-close class="rounded-full border border-line px-7 py-3.5 font-semibold">Close</button></div>
+</div>
+</div>
+</div>
+<script>(function(){var n='5493547623741';document.querySelectorAll('[data-wa]').forEach(function(el){var m=el.getAttribute('data-wa-msg')||'Hi, I saw the demo for physiotherapy clinics and I want to ask about it.';el.href='https://wa.me/'+n+'?text='+encodeURIComponent(m);el.target='_blank';el.rel='noopener';});})();</script>
+<script>
+(function () {
+  'use strict';
+  var modal = document.getElementById('bookingModal');
+  var form = document.getElementById('bookingForm');
+  var done = document.getElementById('bookingDone');
+  var summary = document.getElementById('bookingSummary');
+  var daySelect = document.getElementById('bkDia');
+  if (!modal || !form) return;
+  var fmt = new Intl.DateTimeFormat('en-US', { weekday: 'long', day: 'numeric', month: 'long' });
+  for (var i = 0; i < 7; i++) {
+    var d = new Date(); d.setDate(d.getDate() + i);
+    var label = fmt.format(d); label = label.charAt(0).toUpperCase() + label.slice(1);
+    var opt = document.createElement('option'); opt.textContent = label; opt.value = label; daySelect.appendChild(opt);
+  }
+  function openModal() { modal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; var first = document.getElementById('bkNombre'); if (first) setTimeout(function () { first.focus(); }, 50); }
+  function closeModal() { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+  document.querySelectorAll('[data-booking-open]').forEach(function (el) { el.addEventListener('click', function (e) { e.preventDefault(); openModal(); }); });
+  document.querySelectorAll('[data-booking-close]').forEach(function (el) { el.addEventListener('click', closeModal); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var get = function (id) { return document.getElementById(id).value.trim(); };
+    summary.textContent = 'Service: ' + get('bkServicio') + '\nDay: ' + get('bkDia') + ' · Time: ' + get('bkHora') + '\nName: ' + get('bkNombre') + '\nEmail: ' + get('bkEmail') + '\nHave you been a patient before?: ' + get('bkPaciente') + '\nTime zone: ' + get('bkZona') + '\nReason: ' + get('bkMotivo') + (get('bkEspera') ? '\nAnything we should know: ' + get('bkEspera') : '');
+    form.classList.add('hidden'); done.classList.remove('hidden'); modal.scrollTop = 0;
+  });
+  document.getElementById('bookingAgain').addEventListener('click', function () { form.reset(); done.classList.add('hidden'); form.classList.remove('hidden'); });
+})();
+</script>
+</body></html>
